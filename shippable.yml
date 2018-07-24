@@ -50,16 +50,7 @@ build:
     - which sqlite3 #|| true
     
     - python --version
-    - node --version
-    - javac -version
-    - ruby --version
-    - gcloud version
-    - aws --version
-    - az --version
-    - packer --version
-    - kubectl version --client
-    - docker --version
-    
+        
 integrations:
     
   hub:
