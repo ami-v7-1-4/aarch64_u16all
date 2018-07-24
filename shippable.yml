@@ -51,16 +51,12 @@ build:
     
     - python --version
     - node --version
-    - git lfs version
     - javac -version
     - ruby --version
     - gcloud version
     - aws --version
     - az --version
-    - jfrog --version
-    - terraform -version
     - packer --version
-    - jq --version
     - kubectl version --client
     - docker --version
     
