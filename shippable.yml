@@ -57,7 +57,6 @@ build:
     - dpkg -s rabbitmq-server | grep  Version
     - mongod --version 
     - /var/lib/neo4j/bin/neo4j version
-    - pip show pycrypto 
     
     - python --version
         
