@@ -13,12 +13,12 @@ services:
   - elasticsearch 
   - memcached 
   - mongodb 
-  #- mysql 
-  - neo4j 
+  - mysql 
+  #- neo4j 
   - postgres 
   - rabbitmq 
   - redis  
-  #- riak 
+  - riak 
   - selenium 
   - sqlite
   
@@ -37,7 +37,7 @@ build:
     - echo SHIPPABLE_ES_BINARY=$SHIPPABLE_ES_BINARY
     - echo SHIPPABLE_MEMCACHED_BINARY=$SHIPPABLE_MEMCACHED_BINARY
     - echo SHIPPABLE_MONGODB_BINARY=$SHIPPABLE_MONGODB_BINARY
-    - echo SHIPPABLE_NEO4J_BINARY=$SHIPPABLE_NEO4J_BINARY
+    #- echo SHIPPABLE_NEO4J_BINARY=$SHIPPABLE_NEO4J_BINARY
     - echo SHIPPABLE_POSTGRES_BINARY=$SHIPPABLE_POSTGRES_BINARY
     - echo SHIPPABLE_RABBITMQ_BINARY=$SHIPPABLE_RABBITMQ_BINARY
     - echo SHIPPABLE_REDIS_BINARY=$SHIPPABLE_REDIS_BINARY
@@ -56,7 +56,7 @@ build:
     - curl http://127.0.0.1:5984/
     - dpkg -s rabbitmq-server | grep  Version
     - mongod --version 
-    - /var/lib/neo4j/bin/neo4j version
+    #- /var/lib/neo4j/bin/neo4j version
     
     - python --version
         
