@@ -48,7 +48,7 @@ build:
     - psql --version
     - redis-server -v
     - which sqlite3 #|| true
-    - java -jar /usr/local/selenium/selenium-server-standalone-3.13.0.jar --version
+    - java -jar /usr/local/selenium/selenium-server-standalone-3.14.0.jar --version
     - sqlite3 --version
     - elasticsearch --version
     - sudo -i -u couchdb /opt/couchdb/bin/couchdb 2>&1 >/dev/null &
