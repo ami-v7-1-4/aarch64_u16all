@@ -18,7 +18,7 @@ services:
   - postgres 
   - rabbitmq 
   - redis  
-  - riak 
+ # - riak 
   - selenium 
   - sqlite
   
